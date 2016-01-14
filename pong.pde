@@ -9,7 +9,7 @@ float dy = 4;  // Change in y
 var paddle_width = 5;
 var paddle_height = 100;
 
-var dist_wall = 10;
+var dist_wall = 5;
 
 // Adding total hits here...
 //float total = 0;
@@ -78,7 +78,7 @@ void draw() {
 
     // If ball hits back wall, reverse direction
     if(ball_x < ball_size && ball_dir == -1) {
-        ball_dir *= -1;
+        ball_dir *= -1200;
     }
     // If the ball is touching top or bottom edge, reverse direction
     if(ball_y >= height-ball_size) {
