@@ -53,7 +53,7 @@ void draw() {
        (ball_y < paddle_y + paddle_height + ball_size) && (ball_dir>0)) {
 
         // If we hit the paddle... change direction
-        ball_dir *= -5;
+        ball_dir *= -1;
 
         // Send a message to the main page updating the score...
         score += 100;
@@ -77,8 +77,8 @@ void draw() {
     } 
 
     // If ball hits back wall, reverse direction
-    if(ball_x < ball_size && ball_dir == -100000) {
-        ball_dir *= -100000;
+    if(ball_x < ball_size && ball_dir == -1) {
+        ball_dir *= -1;
     }
     // If the ball is touching top or bottom edge, reverse direction
     if(ball_y >= height-ball_size) {
