@@ -6,8 +6,8 @@ float ball_size = 10;  // Radius of ball
 float dy = 4;  // Change in y
 
 // Global variables for the paddle
-var paddle_width = 10;
-var paddle_height = 200;
+var paddle_width = 5;
+var paddle_height = 100;
 
 var dist_wall = 10;
 
