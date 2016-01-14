@@ -77,8 +77,8 @@ void draw() {
     } 
 
     // If ball hits back wall, reverse direction
-    if(ball_x < ball_size && ball_dir == -1200) {
-        ball_dir *= -1200;
+    if(ball_x < ball_size && ball_dir == -1) {
+        ball_dir *= -1;
     }
     // If the ball is touching top or bottom edge, reverse direction
     if(ball_y >= height-ball_size) {
