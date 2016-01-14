@@ -31,7 +31,7 @@ void draw() {
     background(66,176,44);
 
     // Increment x and y by speed of ball
-    ball_x += ball_dir * 6.0;
+    ball_x += ball_dir * 20.0;
     ball_y += dy;
 
     // If the ball was missed... start over
