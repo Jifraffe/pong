@@ -53,15 +53,15 @@ void draw() {
        (ball_y < paddle_y + paddle_height + ball_size) && (ball_dir>0)) {
 
         // If we hit the paddle... change direction
-        ball_dir *= -1;
+        ball_dir *= -3;
 
         // Send a message to the main page updating the score...
-        score += 100;
+        score += 1000000;
         document.getElementById("score").innerHTML = "Score = " + score;
 
         // Adding in the total hits here...
-        //total += 1;
-        //document.getElementById("total").innerHTML = "Total Hits = " + total;
+        total += 1;
+        document.getElementById("total").innerHTML = "Total Hits = " + total;
 
         if (score>highscore) {
           highscore = score;
