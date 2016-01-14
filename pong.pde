@@ -17,7 +17,7 @@ float highscore = 0;
 float score = 0;
 
 void setup() {
-    size(1800, 800);
+    size(800, 1000);
     rectMode(CENTER_RADIUS);
     ellipseMode(CENTER_RADIUS);
     noStroke();
@@ -31,7 +31,7 @@ void draw() {
     background(66,176,44);
 
     // Increment x and y by speed of ball
-    ball_x += ball_dir * 20.0;
+    ball_x += ball_dir * 4.0;
     ball_y += dy;
 
     // If the ball was missed... start over
