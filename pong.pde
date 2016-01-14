@@ -6,8 +6,8 @@ float ball_size = 7;  // Radius of ball
 float dy = 2;  // Change in y
 
 // Global variables for the paddle
-var paddle_width = 5;
-var paddle_height = 40;
+var paddle_width = 20;
+var paddle_height = 100;
 
 var dist_wall = 8;
 
@@ -31,7 +31,7 @@ void draw() {
     background(155,0,0);
 
     // Increment x and y by speed of ball
-    ball_x += ball_dir * 6.0;
+    ball_x += ball_dir * 10.0;
     ball_y += dy;
 
     // If the ball was missed... start over
@@ -53,10 +53,10 @@ void draw() {
        (ball_y < paddle_y + paddle_height + ball_size) && (ball_dir>0)) {
 
         // If we hit the paddle... change direction
-        ball_dir *= -1;
+        ball_dir *= -5;
 
         // Send a message to the main page updating the score...
-        score += 1;
+        score += 100;
         document.getElementById("score").innerHTML = "Score = " + score;
 
         // Adding in the total hits here...
